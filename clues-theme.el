@@ -95,3 +95,5 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'clues)
+
+;;; clues-theme.el ends here
