@@ -1,4 +1,4 @@
-;;; clues-theme.el - Emacs 24 theme which is ok I suppose
+;;; clues-theme.el --- Emacs 24 theme which is ok I suppose
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-clues-theme 
