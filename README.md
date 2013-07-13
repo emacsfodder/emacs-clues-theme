@@ -9,7 +9,7 @@ Which is quite nice I suppose, here's a screenshot...
 Things to be added:
 
 - Add support for:
-  - [ ] helm
-  - [ ] JS3 (partial support already)
-  - [ ] IDO
-  - [ ] Terminal
+- [ ] helm
+- [ ] JS3 (partial support already)
+- [ ] IDO
+- [ ] Terminal
