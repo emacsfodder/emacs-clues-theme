@@ -2,10 +2,10 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-clues-theme 
-;; Version: 20130713.205
-;;; X-Original-Version: 0.1.0
+;;; Version: 0.1.1
 ;;;
 ;;; Changelog :
+;;;     0.1.1 : Normalize colours. Remove highlight background
 ;;;     0.1.0 : Basic start, the theme is really a note to myself -> Make theme editor
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
