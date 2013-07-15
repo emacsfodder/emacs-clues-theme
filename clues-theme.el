@@ -2,10 +2,12 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-clues-theme 
-;;; Version: 0.1.0
+;;; Version: 20130714.2351
 ;;;
 ;;; Changelog :
-;;;     0.1.0 : Basic start, the theme is really a note to myself -> Make theme editor
+;;; 20130714.2351: Background color normalised, based on pull by Kaustav Das Modak (Github: kaustavdm)
+;;;                Added Rainbow delimeters
+;;;         0.1.0: Basic start, the theme is really a note to myself -> Make theme editor
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
 ;;; it under the terms of the GNU General Public License as published by
@@ -20,7 +22,6 @@
 ;;; along with GNU Emacs.
 ;;;
 ;;; This file is not a part of Emacs
-;;; http://emacsfodder.github.com
 ;;;
 
 (deftheme clues
@@ -28,15 +29,12 @@
 
 (custom-theme-set-variables
  'clues
- '(fringe-mode 10
-               nil (fringe) )
- '(linum-format     " %6d "   )
- '(main-line-color1 "#222232"  )
- '(main-line-color2 "#333343"  )
- '(powerline-color1 "#222232"  )
- '(powerline-color2 "#333343"  )
- 
- )
+ '(fringe-mode 10 nil (fringe))
+ '(linum-format     " %6d "  )
+ '(main-line-color1 "#222232")
+ '(main-line-color2 "#333343")
+ '(powerline-color1 "#222232")
+ '(powerline-color2 "#333343"))
 
 (custom-theme-set-faces
  'clues
@@ -44,33 +42,33 @@
  '(cursor                              ((t (                           :background "orange"                                                                 ))))
  '(default                             ((t (:foreground "#C0E9F6"      :background "#110B14"          :inherit (fixed-pitch)                                ))))
  '(linum                               ((t (:foreground "#434844"      :background "#110B14"          :height 70                                            ))))
- '(minibuffer-prompt                   ((t (:foreground "#1278A8"      :background "#000000"          :weight bold                                          ))))
- '(escape-glyph                        ((t (:foreground "orange"       :background "#000000"                                                                ))))
+ '(minibuffer-prompt                   ((t (:foreground "#1278A8"      :background nil          :weight bold                                          ))))
+ '(escape-glyph                        ((t (:foreground "orange"       :background nil                                                                ))))
  '(highlight                           ((t (:foreground "#004A4F"      :background "DarkOrange"                                                             ))))
  '(region                              ((t (                           :background "#131D26"                                                                ))))
- '(shadow                              ((t (:foreground "#777777"      :background "#000000"                                                                                           ))))
+ '(shadow                              ((t (:foreground "#777777"      :background nil                                                                                           ))))
  '(secondary-selection                 ((t (                           :background "#132125"                                                                ))))
  '(trailing-whitespace                 ((t (                           :background "#C74000"                                                                ))))
- '(font-lock-builtin-face              ((t (:foreground "#55B1E2"      :background "#000000"                                                                ))))
- '(font-lock-comment-face              ((t (:foreground "#90A0A0"      :background "#000000" :slant italic                                                  ))))
- '(font-lock-constant-face             ((t (:foreground "#CFC5A9"      :background "#000000"                                                                ))))
- `(font-lock-doc-string-face           ((t (:foreground "#DFD3E9"      :background "#000000"                                                                ))))
- '(font-lock-function-name-face        ((t (:foreground "#DFD3A9"      :background "#000000"                                                                ))))
- '(font-lock-keyword-face              ((t (:foreground "#55B1E2"      :background "#000000"                                                                ))))
- '(font-lock-negation-char-face        ((t (:foreground "#C75311"      :background "#000000"                                                                ))))
- '(font-lock-string-face               ((t (:foreground "#94D4D9"      :background "#000000"                                                                ))))
- '(font-lock-variable-name-face        ((t (:foreground "#BDBA9F"      :background "#000000"                                                                ))))
- '(font-lock-comment-delimiter-face    ((t (:foreground "#3499aa"      :background "#000000"                        :inherit (font-lock-comment-face)       ))))
- '(font-lock-preprocessor-face         ((t (:foreground "#A16C26"      :background "#000000"                        :inherit (font-lock-builtin-face)       ))))
- '(font-lock-regexp-grouping-backslash ((t (:foreground "#f66500"      :background "#000000"                        :inherit (bold)                         ))))
- '(font-lock-regexp-grouping-construct ((t (:foreground "red"          :background "#000000"                        :inherit (bold)                         ))))
- '(font-lock-doc-face                  ((t (:foreground "#90A0A0"      :background "#000000"                        :inherit (font-lock-string-face)        ))))
- '(font-lock-warning-face              ((t (:foreground "#008000"      :background "#000000"                        :inherit (error)                        ))))
- '(font-lock-type-face                 ((t (:foreground "#3388dd"      :background "#000000"                        :inherit (default)                      ))))
- '(link                                ((t (:foreground "#00b7f0"      :background "#000000" :underline t                                                   ))))
+ '(font-lock-builtin-face              ((t (:foreground "#55B1E2"      :background nil                                                                ))))
+ '(font-lock-comment-face              ((t (:foreground "#90A0A0"      :background nil :slant italic                                                  ))))
+ '(font-lock-constant-face             ((t (:foreground "#CFC5A9"      :background nil                                                                ))))
+ `(font-lock-doc-string-face           ((t (:foreground "#DFD3E9"      :background nil                                                                ))))
+ '(font-lock-function-name-face        ((t (:foreground "#DFD3A9"      :background nil                                                                ))))
+ '(font-lock-keyword-face              ((t (:foreground "#55B1E2"      :background nil                                                                ))))
+ '(font-lock-negation-char-face        ((t (:foreground "#C75311"      :background nil                                                                ))))
+ '(font-lock-string-face               ((t (:foreground "#94D4D9"      :background nil                                                                ))))
+ '(font-lock-variable-name-face        ((t (:foreground "#BDBA9F"      :background nil                                                                ))))
+ '(font-lock-comment-delimiter-face    ((t (:foreground "#3499aa"      :background nil                        :inherit (font-lock-comment-face)       ))))
+ '(font-lock-preprocessor-face         ((t (:foreground "#A16C26"      :background nil                        :inherit (font-lock-builtin-face)       ))))
+ '(font-lock-regexp-grouping-backslash ((t (:foreground "#f66500"      :background nil                        :inherit (bold)                         ))))
+ '(font-lock-regexp-grouping-construct ((t (:foreground "red"          :background nil                        :inherit (bold)                         ))))
+ '(font-lock-doc-face                  ((t (:foreground "#90A0A0"      :background nil                        :inherit (font-lock-string-face)        ))))
+ '(font-lock-warning-face              ((t (:foreground "#008000"      :background nil                        :inherit (error)                        ))))
+ '(font-lock-type-face                 ((t (:foreground "#3388dd"      :background nil                        :inherit (default)                      ))))
+ '(link                                ((t (:foreground "#00b7f0"      :background nil :underline t                                                   ))))
  '(link-visited                        ((t (:foreground "magenta4"                           :underline t           :inherit (link)                         ))))
- '(button                              ((t (                           :background "#aaa"    :underline t           :inherit (link)                         ))))
- '(fringe                              ((t (                           :background "#000000"                                                                ))))
+ '(button                              ((t (                           :background "#AAAAAA"    :underline t           :inherit (link)                         ))))
+ '(fringe                              ((t (                           :background "#1B0F1f" nil                                                                ))))
  '(next-error                          ((t (                                                                        :inherit (region)                       ))))
  '(query-replace                       ((t (                                                                        :inherit (isearch)                      ))))
  '(header-line                         ((t (:foreground "#222222"      :background "#bbbbbb"  :box nil              :inherit (mode-line)                    ))))
@@ -88,6 +86,21 @@
  
  '(js3-external-variable-face          ((t (:foreground "#A0B090" ))))
  )
+
+;; Rainbow delimiters
+(defun clues-rainbow-delim-set-face ()
+  (set-face-attribute 'rainbow-delimiters-depth-1-face   nil :foreground "#444422")
+  (set-face-attribute 'rainbow-delimiters-depth-2-face   nil :foreground "#666644")
+  (set-face-attribute 'rainbow-delimiters-depth-3-face   nil :foreground "#888866")
+  (set-face-attribute 'rainbow-delimiters-depth-4-face   nil :foreground "#AAAA88")
+  (set-face-attribute 'rainbow-delimiters-depth-5-face   nil :foreground "#CCCCAA")
+  (set-face-attribute 'rainbow-delimiters-depth-6-face   nil :foreground "#DEDEAA")
+  (set-face-attribute 'rainbow-delimiters-depth-7-face   nil :foreground "#EFEFBB")
+  (set-face-attribute 'rainbow-delimiters-depth-8-face   nil :foreground "#FFFFCC")
+  (set-face-attribute 'rainbow-delimiters-depth-9-face   nil :foreground "#FFFFEE")
+  (set-face-attribute 'rainbow-delimiters-unmatched-face nil :foreground "#AA0000"))
+
+(eval-after-load "rainbow-delimiters" '(clues-rainbow-delim-set-face))
 
 ;;;###autoload
 (when load-file-name
