@@ -2,9 +2,11 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-clues-theme 
-;;; Version: 20130715.0252
+;;; Version: 20130715.0319
 ;;;
 ;;; Changelog :
+;;;
+;;; 20130715.0319: Modified keyword color 
 ;;;
 ;;; 20130715.0252: Modifications for various colors. Added CUA
 ;;; rectangle coloring. Highlight background and Button colors changed
@@ -61,7 +63,7 @@
  '(font-lock-constant-face             ((t (:foreground "#CFC5A9"  :background nil                                                     ))))
  `(font-lock-doc-string-face           ((t (:foreground "#DFD3E9"  :background nil                                                     ))))
  '(font-lock-function-name-face        ((t (:foreground "#FFF3A9"  :background nil                                                     ))))
- '(font-lock-keyword-face              ((t (:foreground "#BDBA9F"  :background nil                                                     ))))
+ '(font-lock-keyword-face              ((t (:foreground "#55C0D2"  :background nil                                                     ))))
  '(font-lock-negation-char-face        ((t (:foreground "#C75311"  :background nil                                                     ))))
  '(font-lock-string-face               ((t (:foreground "#94D4D9"  :background nil                                                     ))))
  '(font-lock-variable-name-face        ((t (:foreground "#BDBA9F"  :background nil                                                     ))))
