@@ -2,9 +2,12 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-clues-theme 
-;;; Version: 20130715.0319
+;;; Version: 20130720.559
 ;;;
 ;;; Changelog :
+;;;
+;;; 20130720.559: Added rainbow mode seitch (for editing) and fixed
+;;; default for terminal friendly use
 ;;;
 ;;; 20130715.0319: Modified keyword color 
 ;;;
@@ -49,7 +52,15 @@
  'clues
 
  '(cursor                              ((t (                       :background "orange"                                                ))))
- '(default                             ((t (:foreground "#C0E9F6"  :background "#110B14" :inherit (fixed-pitch)                        ))))
+
+ '(default
+   (
+    (((class color) (min-colors 16777216)) (:foreground "#C0E9F6" :background "#110B14"))
+    (((class color) (min-colors 88))       (:foreground "#fff" :background "#000"))
+    (((class color) (min-colors 16))       (:foreground "#fff" :background "#000"))
+    (((class color) (min-colors 8))        (:foreground "#fff" :background "#000")))
+   ) 
+ 
  '(linum                               ((t (:foreground "#434844"  :background "#110B14" :height 70                                    ))))
  '(minibuffer-prompt                   ((t (:foreground "#1278A8"  :background nil       :weight bold                                  ))))
  '(escape-glyph                        ((t (:foreground "orange"   :background nil                                                     ))))
