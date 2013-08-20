@@ -1,10 +1,11 @@
 ;;; clues-theme.el --- Emacs 24 theme which is ok I suppose
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
-;;; Url: https://github.com/jasonm23/emacs-clues-theme 
-;;; Version: 20130714.2351
+;;; Url: https://github.com/jasonm23/emacs-clues-theme
+;;; Version: 20130820.0702
 ;;;
 ;;; Changelog :
+;;; 20130820.0702: Flymake/Flyspell error/warn to underlines. Desaturated function name font lock fg.
 ;;; 20130714.2351: Background color normalised, based on pull by Kaustav Das Modak (Github: kaustavdm)
 ;;;                Added Rainbow delimeters
 ;;;         0.1.0: Basic start, the theme is really a note to myself -> Make theme editor
@@ -53,7 +54,7 @@
  '(font-lock-comment-face              ((t (:foreground "#90A0A0"      :background nil :slant italic                                                  ))))
  '(font-lock-constant-face             ((t (:foreground "#CFC5A9"      :background nil                                                                ))))
  `(font-lock-doc-string-face           ((t (:foreground "#DFD3E9"      :background nil                                                                ))))
- '(font-lock-function-name-face        ((t (:foreground "#DFD3A9"      :background nil                                                                ))))
+ '(font-lock-function-name-face        ((t (:foreground "#BFC3A9"      :background nil                                                                ))))
  '(font-lock-keyword-face              ((t (:foreground "#55B1E2"      :background nil                                                                ))))
  '(font-lock-negation-char-face        ((t (:foreground "#C75311"      :background nil                                                                ))))
  '(font-lock-string-face               ((t (:foreground "#94D4D9"      :background nil                                                                ))))
@@ -61,9 +62,9 @@
  '(font-lock-comment-delimiter-face    ((t (:foreground "#3499aa"      :background nil                        :inherit (font-lock-comment-face)       ))))
  '(font-lock-preprocessor-face         ((t (:foreground "#A16C26"      :background nil                        :inherit (font-lock-builtin-face)       ))))
  '(font-lock-regexp-grouping-backslash ((t (:foreground "#f66500"      :background nil                        :inherit (bold)                         ))))
- '(font-lock-regexp-grouping-construct ((t (:foreground "red"          :background nil                        :inherit (bold)                         ))))
+ '(font-lock-regexp-grouping-construct ((t (:foreground "#12A860"      :background nil                        :inherit (bold)                         ))))
  '(font-lock-doc-face                  ((t (:foreground "#90A0A0"      :background nil                        :inherit (font-lock-string-face)        ))))
- '(font-lock-warning-face              ((t (:foreground "#008000"      :background nil                        :inherit (error)                        ))))
+ '(font-lock-warning-face              ((t (:foreground "#00802A"      :background nil                        :inherit (error)                        ))))
  '(font-lock-type-face                 ((t (:foreground "#3388dd"      :background nil                        :inherit (default)                      ))))
  '(link                                ((t (:foreground "#00b7f0"      :background nil :underline t                                                   ))))
  '(link-visited                        ((t (:foreground "magenta4"                           :underline t           :inherit (link)                         ))))
@@ -83,8 +84,15 @@
  '(match                               ((t (                           :background "#3388cc"                                                                ))))
  '(tooltip                             ((t (:foreground "black"        :background "LightYellow"                     :inherit (variable-pitch)              ))))
  '(js3-function-param-face             ((t (:foreground "#DFD3A9" ))))
- 
+
  '(js3-external-variable-face          ((t (:foreground "#A0B090" ))))
+ ;; flyspell-mode
+ `(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
+ `(flyspell-duplicate                  ((t (:underline "#009945" :background nil :inherit nil ))))
+ ;; flymake-mode
+ `(flymake-errline                     ((t (:underline "#AA0000" :background nil :inherit nil ))))
+ `(flymake-warnline                    ((t (:underline "#009945" :background nil :inherit nil ))))
+
  )
 
 ;; Rainbow delimiters
