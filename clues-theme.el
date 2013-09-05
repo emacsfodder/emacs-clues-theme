@@ -1,4 +1,4 @@
-;;; clues-theme.el --- an Emacs 24 which may well be fully awesome...
+;;; clues-theme.el --- an Emacs 24 theme which may well be fully awesome...
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
@@ -56,7 +56,7 @@
 ;;
 
 (deftheme clues
-  "clues theme - an Emacs 24 which may well be fully awesome...")
+  "clues theme - an Emacs 24 theme which may well be fully awesome...")
 
 (custom-theme-set-variables
  'clues
