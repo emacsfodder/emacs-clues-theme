@@ -1,44 +1,62 @@
-;;; clues-theme.el --- Emacs 24 theme which is ok I suppose
-;;;
-;;; Author: Jason Milkins <jasonm23@gmail.com>
-;;; Url: https://github.com/jasonm23/emacs-clues-theme
-;;; Version: 20130820.0702
-;;;
+;;; clues-theme.el --- an Emacs 24 which may well be fully awesome...
+;;
+;; Author: Jason Milkins <jasonm23@gmail.com>
+;; Url: https://github.com/jasonm23/emacs-clues-theme
+;; Version: 20130905.2230
+;; Package-Requires: ((emacs "24.0"))
+;;
 ;;; Changelog :
-;;; 20130820.0702: Flymake/Flyspell error/warn to underlines. Desaturated function name font lock fg.
-;;;
-;;; 20130720.559: Added rainbow mode seitch (for editing) and fixed
-;;; default for terminal friendly use
-;;;
-;;; 20130715.0319: Modified keyword color
-;;;
-;;; 20130715.0252: Modifications for various colors. Added CUA
-;;; rectangle coloring. Highlight background and Button colors changed
-;;; for better visibility, reduced garish-icity.
-;;;
-;;; 20130714.2351: Background color normalised, based on pull by
-;;; Kaustav Das Modak (Github: kaustavdm) Added Rainbow delimeters
-;;;
-;;; 0.1.0: Basic start, the theme is really a note to myself -> Make
-;;; theme editor
-;;;
-;;; This program is free software: you can redistribute it and/or modify
-;;; it under the terms of the GNU General Public License as published by
-;;; the Free Software Foundation, version 3 of the License.
-;;;
-;;; This file is distributed in the hope that it will be useful,
-;;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;;; GNU General Public License for more details.
-;;;
-;;; You should have received a copy of the GNU General Public License
-;;; along with GNU Emacs.
-;;;
-;;; This file is not a part of Emacs
-;;;
+;;
+;; 20130905.2230: Updated header and minor changes
+;;
+;; 20130820.0702: Flymake/Flyspell error/warn to
+;; underlines. Desaturated function name font lock fg.
+;;
+;; 20130720.559: Added rainbow mode switch (for editing) and fixed
+;; default for terminal friendly use
+;;
+;; 20130715.0319: Modified keyword color
+;;
+;; 20130715.0252: Modifications for various colors. Added CUA
+;; rectangle coloring. Highlight background and Button colors changed
+;; for better visibility, reduced garish-icity ... That, is not a word.
+;;
+;; 20130714.2351: Background color normalised, based on pull by
+;; Kaustav Das Modak (Github: kaustavdm) Added Rainbow delimeters
+;;
+;; 0.1.0: Basic start, the theme is really a note to myself -> Make
+;; theme editor
+;;
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, version 3 of the License.
+;;
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.
+;;
+;; This file is not a part of Emacs
+;;
+;;; Commentary:
+;;
+;; Clues was initially based on a Visual Studio theme called 'Blues 'n
+;; Roots' however it's a long way from looking much like it, aside
+;; from the occasional color accent, Blues (despite it's name) has a
+;; more toasted caramel flavor. Clues on the other hand is made up of
+;; cooling colors with a couple of flecks of light cream/brown/orange
+;; to break up any monotony, with yellow/gold rainbow-delimiters.
+;;
+;; Clues has become my working theme of choice since about 7/20, and
+;; with xterm-frobs.el, looks really excellent in the terminal as well
+;; as the GUI.
+;;
 
 (deftheme clues
-  "clues theme - Emacs 24 theme which is ok I suppose")
+  "clues theme - an Emacs 24 which may well be fully awesome...")
 
 (custom-theme-set-variables
  'clues
@@ -84,7 +102,7 @@
  '(font-lock-warning-face              ((t (:foreground "#008000"  :background nil       :inherit (error)                              ))))
  '(font-lock-type-face                 ((t (:foreground "#55aadd"  :background nil       :inherit (default)                            ))))
  '(link                                ((t (:foreground "#00b7f0"  :background nil       :underline t                                  ))))
- '(link-visited                        ((t (:foreground "magenta4"                       :underline t :inherit (link)                  ))))
+ '(link-visited                        ((t (:foreground "#4488cc"                       :underline t :inherit (link)                  ))))
  '(button                              ((t (:foreground "#FFFFFF"  :background "#444444" :underline t :inherit (link)                  ))))
  '(fringe                              ((t (                       :background "#1B0F1f"                                               ))))
  '(next-error                          ((t (                                             :inherit (region)                             ))))
