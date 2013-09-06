@@ -2,10 +2,12 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20130905.2230
+;; Version: 20130905.0211
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;;
+;; 20130906.0211: Fix Magit item hightlight
 ;;
 ;; 20130905.2230: Updated header and minor changes
 ;;
@@ -127,6 +129,8 @@
  ;; flymake-mode
  `(flymake-errline                     ((t (:underline "#AA0000" :background nil :inherit nil ))))
  `(flymake-warnline                    ((t (:underline "#009945" :background nil :inherit nil ))))
+ ;; Magit hightlight
+ `(magit-item-highlight                 ((t (:foreground "white" :background "#1278A8" :inherit nil ))))
  )
 
 ;; Rainbow delimiters
