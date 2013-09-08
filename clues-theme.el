@@ -2,10 +2,14 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20130905.0211
+;; Version: 20130908.0722
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;;
+;; 20130908.0722: Update Js3 theming
+;;
+;; 20130906.1159: Fix commentary block
 ;;
 ;; 20130906.0211: Fix Magit item hightlight
 ;;
@@ -42,7 +46,7 @@
 ;; along with GNU Emacs.
 ;;
 ;; This file is not a part of Emacs
-;;
+
 ;;; Commentary:
 ;;
 ;; Clues was initially based on a Visual Studio theme called 'Blues 'n
@@ -121,7 +125,7 @@
  '(match                               ((t (                       :background "#3388cc"                                               ))))
  '(tooltip                             ((t (:foreground "black"    :background "LightYellow" :inherit (variable-pitch)                 ))))
  '(js3-function-param-face             ((t (:foreground "#BFC3A9"                                                                      ))))
- '(js3-external-variable-face          ((t (:foreground "#A0B090"                                                                      ))))
+ '(js3-external-variable-face          ((t (:foreground "#F0B090"  :bold t                                                             ))))
  '(cua-rectangle                       ((t (:foreground "#E0E4CC"  :background "#342858" ))))
  ;; flyspell-mode
  `(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
