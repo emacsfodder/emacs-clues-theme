@@ -2,10 +2,11 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20130908.0722
+;; Version: 20130908.0801
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;; 20130908.0801: Added git-gutter, diff support
 ;;
 ;; 20130908.0722: Update Js3 theming
 ;;
@@ -130,11 +131,21 @@
  ;; flyspell-mode
  `(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
  `(flyspell-duplicate                  ((t (:underline "#009945" :background nil :inherit nil ))))
- ;; flymake-mode
+  ;; flymake-mode
  `(flymake-errline                     ((t (:underline "#AA0000" :background nil :inherit nil ))))
  `(flymake-warnline                    ((t (:underline "#009945" :background nil :inherit nil ))))
  ;; Magit hightlight
- `(magit-item-highlight                 ((t (:foreground "white" :background "#1278A8" :inherit nil ))))
+ `(magit-item-highlight                ((t (:foreground "white" :background "#1278A8" :inherit nil ))))
+ ;;git-gutter
+ '(git-gutter:added                    ((t (:foreground "#609f60" :bold t))))
+ '(git-gutter:modified                 ((t (:foreground "#3388cc" :bold t))))
+ '(git-gutter:deleted                  ((t (:foreground "#cc3333" :bold t))))
+ '(diff-added                          ((t (:background "#132013"))))
+ '(diff-removed                        ((t (:background "#290a0a"))))
+ '(diff-file-header                    ((t (:background "#362145"))))
+ '(diff-context                        ((t (:foreground "#E0E4CC"))))
+ '(diff-hunk-header                    ((t (:background "#242130"))))
+
  )
 
 ;; Rainbow delimiters
