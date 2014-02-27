@@ -2,10 +2,12 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20130908.0801
+;; Version: 20140227.0115
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;; 20140227.0115: Improve visibility of header-line
+;;
 ;; 20130908.0801: Added git-gutter, diff support
 ;;
 ;; 20130908.0722: Update Js3 theming
@@ -57,9 +59,9 @@
 ;; cooling colors with a couple of flecks of light cream/brown/orange
 ;; to break up any monotony, with yellow/gold rainbow-delimiters.
 ;;
-;; Clues has become my working theme of choice since about 7/20, and
-;; with xterm-frobs.el, looks really excellent in the terminal as well
-;; as the GUI.
+;; Clues has become my working theme of choice since about 7/20/2013,
+;; and when used with xterm-frobs.el, it looks great in the terminal
+;; as well as the GUI.
 ;;
 
 (deftheme clues
@@ -114,7 +116,7 @@
  '(fringe                              ((t (                       :background "#1B0F1f"                                               ))))
  '(next-error                          ((t (                                             :inherit (region)                             ))))
  '(query-replace                       ((t (                                             :inherit (isearch)                            ))))
- '(header-line                         ((t (:foreground "#222222"  :background "#bbbbbb" :box nil :inherit (mode-line)                 ))))
+ '(header-line                         ((t (:foreground "#EEEEEE"  :background "#444444" :box nil :inherit (mode-line)                 ))))
  '(mode-line-highlight                 ((t (                                             :box nil                                      ))))
  '(mode-line-emphasis                  ((t (                                             :weight bold                                  ))))
  '(mode-line-buffer-id                 ((t (                                             :box nil :weight bold                         ))))
