@@ -2,10 +2,12 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20140227.0115
+;; Version: 20140228.0154
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;; 20140228.0154: Improve visibility of region and secondary-selection
+;;
 ;; 20140227.0115: Improve visibility of header-line
 ;;
 ;; 20130908.0801: Added git-gutter, diff support
@@ -90,9 +92,9 @@
  '(minibuffer-prompt                   ((t (:foreground "#1278A8"  :background nil       :weight bold                                  ))))
  '(escape-glyph                        ((t (:foreground "orange"   :background nil                                                     ))))
  '(highlight                           ((t (:foreground "orange"   :background nil                                                     ))))
- '(region                              ((t (                       :background "#131D26"                                               ))))
+ '(region                              ((t (                       :background "#342858"                                               ))))
  '(shadow                              ((t (:foreground "#777777"  :background nil                                                     ))))
- '(secondary-selection                 ((t (                       :background "#132125"                                               ))))
+ '(secondary-selection                 ((t (                       :background "#342858"                                               ))))
  '(trailing-whitespace                 ((t (:foreground "#FFFFFF"  :background "#C74000"                                               ))))
  '(font-lock-builtin-face              ((t (:foreground "#55B1E2"  :background nil                                                     ))))
  '(font-lock-comment-face              ((t (:foreground "#90A0A0"  :background nil       :slant italic                                 ))))
