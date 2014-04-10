@@ -2,10 +2,12 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20140228.0154
+;; Version: 20140410.1055
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;; 20140410.1055: Improve visibility of linenums
+;;
 ;; 20140228.0154: Improve visibility of region and secondary-selection
 ;;
 ;; 20140227.0115: Improve visibility of header-line
@@ -88,7 +90,7 @@
     (((class color) (min-colors 16))       (:foreground "#fff" :background "#000"))
     (((class color) (min-colors 8))        (:foreground "#fff" :background "#000")))
    )
- '(linum                               ((t (:foreground "#434844"  :background "#110B14" :height 70                                    ))))
+ '(linum                               ((t (:foreground "#6a6a6a"  :background "#110B14" :height 96                                    ))))
  '(minibuffer-prompt                   ((t (:foreground "#1278A8"  :background nil       :weight bold                                  ))))
  '(escape-glyph                        ((t (:foreground "orange"   :background nil                                                     ))))
  '(highlight                           ((t (:foreground "orange"   :background nil                                                     ))))
