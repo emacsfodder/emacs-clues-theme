@@ -135,7 +135,7 @@
  '(lazy-highlight                      ((t (                       :background "#77bbdd"                                               ))))
  '(match                               ((t (                       :background "#3388cc"                                               ))))
  '(tooltip                             ((t (:foreground "black"    :background "LightYellow" :inherit (variable-pitch)                 ))))
- '(highlight-indentation-face          ((t (                       :background "#333A44"                                               ))))
+ '(highlight-indentation-face          ((t (                       :background "#122930"                                               ))))
  '(js3-function-param-face             ((t (:foreground "#BFC3A9"                                                                      ))))
  '(js3-external-variable-face          ((t (:foreground "#F0B090"  :bold t                                                             ))))
  '(cua-rectangle                       ((t (:foreground "#E0E4CC"  :background "#342858" ))))
