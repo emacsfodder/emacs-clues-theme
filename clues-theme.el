@@ -2,10 +2,12 @@
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
 ;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 20140417.1000
+;; Version: 20140922.1722
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog :
+;; 20140922.1722: Add highlight-indentation-mode support
+;;
 ;; 20140417.1000: Improve visibility of diff backgrounds
 ;;
 ;; 20140410.1055: Improve visibility of linenums
@@ -133,6 +135,7 @@
  '(lazy-highlight                      ((t (                       :background "#77bbdd"                                               ))))
  '(match                               ((t (                       :background "#3388cc"                                               ))))
  '(tooltip                             ((t (:foreground "black"    :background "LightYellow" :inherit (variable-pitch)                 ))))
+ '(highlight-indentation-face          ((t (                       :background "#443333"                                               ))))
  '(js3-function-param-face             ((t (:foreground "#BFC3A9"                                                                      ))))
  '(js3-external-variable-face          ((t (:foreground "#F0B090"  :bold t                                                             ))))
  '(cua-rectangle                       ((t (:foreground "#E0E4CC"  :background "#342858" ))))
