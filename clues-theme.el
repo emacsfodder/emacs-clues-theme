@@ -180,8 +180,4 @@
 
 (provide-theme 'clues)
 
-;; Local Variables:
-;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
-;; End:
-
 ;;; clues-theme.el ends here
