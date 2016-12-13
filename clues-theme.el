@@ -1,11 +1,13 @@
 ;;; clues-theme.el --- an Emacs 24 theme which may well be fully awesome...
 ;;
 ;; Author: Jason Milkins <jasonm23@gmail.com>
-;; Url: https://github.com/jasonm23/emacs-clues-theme
-;; Version: 1.0.0
+;; Url: https://github.com/emacsfodder/emacs-clues-theme
+;; Version: 1.0.1
 ;; Package-Requires: ((emacs "24.0"))
 ;;
 ;;; Changelog
+;;
+;; 1.0.1 - Source URL fixed
 ;;
 ;; 1.0.0 - tagged for Debian.
 ;;
